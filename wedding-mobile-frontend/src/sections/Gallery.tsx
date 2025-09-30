@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './sections.css'
 
-const sampleImages = Array.from({ length: 60 }).map((_, i) => `https://picsum.photos/seed/w${i+1}/600/600`)
+const sampleImages = Array.from({ length: 60 }).map((_, i) => `image/${i+4}.jpg`)
 
 export default function Gallery() {
   const [expanded, setExpanded] = useState(false)
-  const visible = expanded ? 45 : 9
+  const visible = expanded ? 33 : 9
   const toggle = () => {
     setExpanded((v) => {
       const next = !v

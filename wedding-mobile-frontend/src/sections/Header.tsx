@@ -59,10 +59,11 @@ export default function Header() {
             <a onClick={() => go('home')}>메인</a>
             <a onClick={() => go('intro')}>인사말</a>
             <a onClick={() => go('about')}>소개</a>
+            <a onClick={() => go('details')}>예식 안내</a>
             <a onClick={() => go('gallery')}>갤러리</a>
             <a onClick={() => go('map')}>오시는 길</a>
             <a onClick={() => go('account')}>계좌번호</a>
-            <a onClick={() => go('guestbook')}>방명록</a>
+            <a onClick={() => go('rsvp')}>참석 의사</a>
             <a onClick={() => go('timeline')}>함께한 시간</a>
           </nav>
           </div>

@@ -7,7 +7,9 @@ export default function MusicPlayer() {
   const [needsStart, setNeedsStart] = useState(false)
 
   useEffect(() => {
-    const audio = new Audio('/wedding-wedding-trailer-music.mp3')
+    const base = (import.meta as any).env.BASE_URL || '/'
+    const src = `${base}wedding-wedding-trailer-music.mp3`
+    const audio = new Audio(src)
     audio.loop = true
     audioRef.current = audio
 

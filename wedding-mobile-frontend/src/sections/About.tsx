@@ -9,7 +9,7 @@ export default function About() {
           <div className="about-card">
             <img
               className="about-photo"
-              src="https://images.unsplash.com/photo-1729106657786-ef318f75e365?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="image/19.jpg"
               alt="신랑"
             />
             <div className="about-caption">
@@ -21,7 +21,7 @@ export default function About() {
           <div className="about-card">
             <img
               className="about-photo"
-              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop"
+              src="image/14.jpg"
               alt="신부"
             />
             <div className="about-caption">
