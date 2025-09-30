@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/wedding-mobile-frontend/', // 레포 이름으로 설정
+  base: '/wedding-mobile-frontend/', // 프로젝트 페이지 경로
   build: {
-    outDir: '../docs' // dist 대신 docs로 출력
+    outDir: 'docs' // 레포 내부 docs로 출력 (GitHub Pages: main/docs)
   }
 })
