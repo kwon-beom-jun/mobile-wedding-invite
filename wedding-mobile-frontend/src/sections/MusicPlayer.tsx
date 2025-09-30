@@ -83,7 +83,18 @@ export default function MusicPlayer() {
       )}
       <button className={`music-btn ${playing ? 'playing' : ''}`} aria-label="배경음악" onClick={toggle}>
         <span className={`music-icon ${playing ? 'pause' : 'play'}`}>
-          {playing ? '⏸' : '▶'}
+          {playing ? (
+            // pause icon SVG (consistent across platforms)
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+              <rect x="6" y="4" width="4" height="16" rx="1.5" fill="currentColor" />
+              <rect x="14" y="4" width="4" height="16" rx="1.5" fill="currentColor" />
+            </svg>
+          ) : (
+            // play icon SVG
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+              <path d="M8 5l11 7-11 7V5z" fill="currentColor" />
+            </svg>
+          )}
         </span>
       </button>
       <button className="fab-btn top" aria-label="맨 위로" onClick={scrollTop}><span className="wide-chev">˄</span></button>

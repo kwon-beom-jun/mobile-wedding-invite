@@ -720,9 +720,9 @@ p {
 .music-icon.pause {
   font-size: 23px;
   line-height: 1;
-  position: relative;
-  top: -2px;
+  position: static;
 }
+.music-icon svg { display: block; }
 .fab-btn {
   width: 44px;
   height: 44px;
